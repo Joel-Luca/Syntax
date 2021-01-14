@@ -5,7 +5,7 @@ public class Aufgabe9 {
         String name = JOptionPane.showInputDialog(null, "Bitte gib deinen Namen ein");
         double gewicht = Double.parseDouble(JOptionPane.showInputDialog(null, "Bitte gib dein Gewicht ein(kg)"));
         double groesse = Double.parseDouble(JOptionPane.showInputDialog(null, "Bitte gib deine Körpergrösse ein(m)"));
-        String bmi = Double.toString(gewicht / groesse);
+        String bmi = Double.toString(gewicht / Math.pow(groesse, 2));
         System.out.println(name + ", dein BMI ist " + bmi);
     }
 }
